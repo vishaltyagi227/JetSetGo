@@ -1,0 +1,22 @@
+{
+    "bracketSpacing": true,
+    "jsxSingleQuote": false,
+    "printWidth": 80,
+    "trailingCommas": "es5",
+    "singleQuote": true,
+    "semi": true,
+    "singleAttributePerLine": true,
+    "overrides": [
+        {
+            "files": [
+                "*.js",
+                "*.ts",
+                "*.tsx",
+                "*.scss"
+            ],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
