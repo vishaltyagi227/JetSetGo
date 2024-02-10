@@ -1,5 +1,7 @@
+import FlightEnquiryContainer from '@containers/FlightEnquiry';
+
 function App() {
-  return <h1>Hello</h1>;
+  return <FlightEnquiryContainer />;
 }
 
 export default App;

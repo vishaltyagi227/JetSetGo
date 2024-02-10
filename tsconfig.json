@@ -22,7 +22,12 @@
 
     /* Paths */
     "paths": {
-      "@src/*": ["./src/*"]
+      "@src/*": ["./src/*"],
+      "@containers/*": ["./src/app/containers/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@services/*": ["./src/app/services/*"],
+      "@constants/*": ["./src/app/constants/*"],
+      "@hooks/*": ["./src/app/hooks/*"]
     }
   },
   "include": ["src"],
