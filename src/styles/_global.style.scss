@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Mona Sans';
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#root {
+  height: 100%;
+}

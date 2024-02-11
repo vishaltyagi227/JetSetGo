@@ -1,0 +1,9 @@
+@import '@styles/functions.style';
+
+.dropdown-select {
+  width: 100%;
+  padding: toRem(5) toRem(7.5);
+  font-size: toRem(16);
+  font-weight: 400;
+  color: '#fff';
+}

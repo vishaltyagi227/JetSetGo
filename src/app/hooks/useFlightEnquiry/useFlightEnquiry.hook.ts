@@ -1,6 +1,7 @@
 import { Order } from '@constants/global.const';
 import { fetchFlightEnquiryDetails } from '@services/flightEnquiry/flightEnquiry.service';
 import { IFilter, IFlightEnquiryDetails } from '@src/app/types/flight.types';
+import moment from 'moment';
 import { useRef, useState } from 'react';
 
 const useFlightEnquiry = (): {
@@ -15,11 +16,21 @@ const useFlightEnquiry = (): {
   >([]);
 
   const getFilterData = (data: IFlightEnquiryDetails[], filter: IFilter) => {
-    const { airlines } = filter;
+    const { source, destination, departureTime, airlines } = filter;
 
-    return data.filter((flightData) =>
-      airlines.includes(flightData.airline.code),
-    );
+    return data.filter((flightData) => {
+      const isDepartureDateSame =
+        !departureTime ||
+        moment(departureTime).isSame(flightData.source.departureTime, 'day');
+
+      return (
+        (!source || flightData.source.airport.airportCode === source) &&
+        (!destination ||
+          flightData.destination.airport.airportCode === destination) &&
+        (!airlines || airlines.includes(flightData.airline.code)) &&
+        isDepartureDateSame
+      );
+    });
   };
 
   const getSortedData = (data: IFlightEnquiryDetails[], order: Order) => {

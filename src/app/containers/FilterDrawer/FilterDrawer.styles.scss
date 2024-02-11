@@ -1,0 +1,120 @@
+@import '@styles/functions.style';
+
+.filter {
+  background-color: #fff;
+  border-radius: 5px;
+  max-height: toRem(600);
+  height: toRem(600);
+  box-shadow:
+    rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  opacity: 1;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    &--hidden {
+      height: 0;
+      overflow: hidden;
+      box-shadow: none;
+      opacity: 0;
+      transition: height 0.3s ease-in-out;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: toRem(17);
+    padding: toRem(18);
+    border-bottom: 2px solid #edf5fa;
+    color: #575959;
+  }
+
+  &__content {
+    padding: toRem(18);
+  }
+
+  &__label {
+    font-size: toRem(16);
+    font-weight: 500;
+    margin-bottom: toRem(12);
+  }
+
+  &__list {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  &__list-item {
+    padding: toRem(5) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    & > label,
+    input {
+      cursor: pointer;
+    }
+
+    & > label {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__list-item-image {
+    display: flex;
+    max-width: 30px;
+    aspect-ratio: 1;
+  }
+
+  &__checkbox-input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+
+  &__check-box::before {
+    content: '';
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #575959;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 6px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  &__checkbox-input:checked + &__check-box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 9px;
+    width: 5px;
+    height: 12px;
+    border: solid #0c346a;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &__check-box:hover {
+    &::before,
+    &::after {
+      border-color: #33a0fb;
+    }
+  }
+}

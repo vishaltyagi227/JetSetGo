@@ -1,0 +1,14 @@
+.app-wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.header-content {
+  flex: 0 1 auto;
+}
+
+.main-content {
+  flex: 1 1 auto;
+  background-color: #f0f5fa;
+}

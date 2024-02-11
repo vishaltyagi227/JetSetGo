@@ -14,11 +14,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@src': root,
-      '@containers': resolve(root, 'app/containers'),
-      '@components': resolve(root, 'app/components'),
-      '@services': resolve(root, 'app/services'),
-      '@constants': resolve(root, 'app/constants'),
-      '@hooks': resolve(root, 'app/hooks'),
+      '@styles': resolve(root, 'styles'),
+      '@assets': resolve(root, 'assets'),
+      '@containers': resolve(root, 'app', 'containers'),
+      '@components': resolve(root, 'app', 'components'),
+      '@services': resolve(root, 'app', 'services'),
+      '@constants': resolve(root, 'app', 'constants'),
+      '@hooks': resolve(root, 'app', 'hooks'),
     },
   },
 });
