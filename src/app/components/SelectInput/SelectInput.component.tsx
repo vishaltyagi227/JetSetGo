@@ -1,6 +1,6 @@
 import '@components/SelectInput/SelectInput.style.scss';
+import { ISelectInput } from '@components/SelectInput/SelectInput.types';
 import Select, { SingleValue } from 'react-select';
-import { ISelectInput } from './SelectInput.types';
 
 const SelectInput = (props: ISelectInput) => {
   const { name, onChange, options, value, placeholder = 'Select' } = props;
@@ -19,7 +19,7 @@ const SelectInput = (props: ISelectInput) => {
       onChange={handleChange}
       placeholder={placeholder}
       isOptionDisabled={(option) => {
-        return option?.isDisabled;
+        return !!option?.isDisabled;
       }}
       className="dropdown-select"
       styles={{

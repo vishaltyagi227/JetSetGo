@@ -11,9 +11,9 @@ const FlightInfoCard = (props: IFlightInfoCardProps) => {
   const arrivalTime = flightInfo.destination.arrivalTime.format('HH:mm');
   const flightDuration = flightInfo.duration;
 
-  const airlinesLogo = {
-    AB: icons.spiceJetLogo,
-    CD: icons.airIndiaLogo,
+  const airlinesLogo: Record<string, string> = {
+    ['AB']: icons.spiceJetLogo,
+    ['CD']: icons.airIndiaLogo,
   };
 
   return (

@@ -1,5 +1,5 @@
 import '@components/RadioInput/RadioInput.style.scss';
-import { IRadioInput } from './RadioInput.types';
+import { IRadioInput } from '@components/RadioInput/RadioInput.types';
 
 const RadioInput = (props: IRadioInput) => {
   const { name, onChange, options, value } = props;

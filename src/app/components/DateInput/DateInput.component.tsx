@@ -1,6 +1,6 @@
 import '@components/DateInput/DateInput.style.scss';
+import { IDateInput } from '@components/DateInput/DateInput.types';
 import DatePicker from 'react-datepicker';
-import { IDateInput } from './DateInput.types';
 
 import '@components/DateInput/DateInput.style.scss';
 import 'react-datepicker/dist/react-datepicker.css';
