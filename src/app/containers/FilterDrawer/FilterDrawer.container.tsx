@@ -1,8 +1,8 @@
 import icons from '@assets/icons';
 import Button from '@components/Button';
 import '@containers/FilterDrawer/FilterDrawer.styles.scss';
+import { IFilterDrawerProps } from '@containers/FilterDrawer/FilterDrawer.types';
 import { useState } from 'react';
-import { IFilterDrawerProps } from './FilterDrawer.types';
 
 const filter = {
   label: 'Preferred Airlines',

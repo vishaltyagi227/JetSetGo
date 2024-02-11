@@ -1,8 +1,8 @@
 import '@components/Button/Button.style.scss';
-import '@components/SortButton/SortButton.sytles.scss';
+import '@components/SortButton/SortButton.style.scss';
+import { ISortButton } from '@components/SortButton/SortButton.types';
 import { Order } from '@src/app/constants/global.const';
 import { useState } from 'react';
-import { ISortButton } from './SortButton.types';
 
 const SortButton = (props: ISortButton) => {
   const { label, onChange } = props;

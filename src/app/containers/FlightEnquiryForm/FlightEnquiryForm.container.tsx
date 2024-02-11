@@ -8,14 +8,14 @@ import {
   TRIP_TYPE_OPTIONS,
 } from '@constants/global.const';
 import '@containers/FlightEnquiryForm/FlightEnquiryForm.styles.scss';
+import {
+  IFlightEnquiryFormDetails,
+  IFlightEnquiryFormProps,
+} from '@containers/FlightEnquiryForm/FlightEnquiryForm.types';
 import Button from '@src/app/components/Button';
 import RadioInput from '@src/app/components/RadioInput';
 import moment from 'moment';
 import { useState } from 'react';
-import {
-  IFlightEnquiryFormDetails,
-  IFlightEnquiryFormProps,
-} from './FlightEnquiryForm.types';
 
 const FlightEnquiryForm = (props: IFlightEnquiryFormProps) => {
   const [formDetails, setFormDetails] = useState<IFlightEnquiryFormDetails>({
