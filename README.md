@@ -1,10 +1,12 @@
 # JetSetGo - React JS Flight App ✈️
 
-Welcome to JetSetGo, a sleek React JS app simplifying flight bookings.
+Welcome to JetSetGo, a sleek React JS app that simplifies flight bookings.
 
 ## Overview
 
 JetSetGo allows users to effortlessly request flights, explore options, and customize preferences. The application presents dynamic search results for flights, providing users with the ability to filter results based on airlines and arrange them in ascending or descending order of prices.
+
+### Live: https://jetsetgo-vishal.netlify.app/
 
 ![croped-landing page](https://github.com/vishaltyagi227/JetSetGo/assets/73596618/87d468bb-33a6-4bf5-9846-ddd53bec4a10)
 
