@@ -1,0 +1,23 @@
+@import '@styles/functions.style';
+
+.app-header {
+  background-color: #33a0fb;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: flex-start;
+  padding: toRem(1) 0;
+
+  &__image {
+    max-width: toRem(80);
+  }
+
+  &__text {
+    font-family: 'LimelightRegular';
+    color: #fff;
+    font-size: toRem(28);
+  }
+}

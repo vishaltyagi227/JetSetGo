@@ -1,0 +1,16 @@
+@font-face {
+  font-display: swap;
+  font-family: 'LimelightRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/LimelightRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('../assets/fonts/MonaSans.woff2') format('woff2 supports variations'),
+    url('../assets/fonts/MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}

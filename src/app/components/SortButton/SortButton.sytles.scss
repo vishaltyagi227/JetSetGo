@@ -1,0 +1,45 @@
+@import '@styles/functions.style';
+
+.sort-button {
+  min-width: toRem(110);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__label {
+    margin: toRem(10) 0;
+    padding-left: 5px;
+    color: #575959;
+    font-weight: 600;
+  }
+
+  &__asc,
+  &__desc {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: 24px;
+    aspect-ratio: 1;
+    -webkit-box-shadow: inset 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 2px 2px 9px -7px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    border-radius: 1px;
+
+    & > svg > path {
+      fill: #33a0fb;
+    }
+
+    &:hover,
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &--selected {
+    background-color: #33a0fb;
+    & > svg > path {
+      fill: #fff;
+    }
+  }
+}

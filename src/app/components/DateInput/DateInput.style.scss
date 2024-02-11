@@ -1,0 +1,51 @@
+@import '@styles/functions.style';
+
+.date-select-container {
+  position: relative;
+  width: 100%;
+  padding: toRem(5) toRem(7.5);
+}
+
+.date-select {
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    padding: toRem(8) toRem(3) toRem(8) toRem(7.5) !important;
+    font-size: toRem(16);
+    font-weight: 400;
+    color: #fff;
+    background-color: #0c346a;
+    outline: none;
+    border: toRem(1) solid white;
+    cursor: pointer;
+  }
+
+  &__input::placeholder {
+    color: white;
+  }
+
+  &__input:hover,
+  &__input:focus {
+    border-color: #33a0fb;
+  }
+
+  &__calendar-icon {
+    font-size: toRem(16);
+    fill: white;
+    right: toRem(5);
+  }
+}
+
+.react-datepicker {
+  width: 100%;
+
+  &__month-container {
+    width: 100%;
+  }
+
+  &__input-container {
+    display: flex;
+    align-items: center;
+  }
+}

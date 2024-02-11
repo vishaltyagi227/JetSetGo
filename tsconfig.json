@@ -23,6 +23,8 @@
     /* Paths */
     "paths": {
       "@src/*": ["./src/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@assets/*": ["./src/assets/*"],
       "@containers/*": ["./src/app/containers/*"],
       "@components/*": ["./src/app/components/*"],
       "@services/*": ["./src/app/services/*"],

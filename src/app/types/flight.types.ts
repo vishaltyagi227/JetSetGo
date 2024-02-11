@@ -19,8 +19,7 @@ interface IDestinationAirport {
   airport: IAirportDetails;
   arrivalTime: Moment;
 }
-
-export interface IAirlineDetails {
+interface IAirlineDetails {
   code: string; // optimize to use only known airline code
   displayName: string;
   flightNumber: string;
@@ -36,5 +35,8 @@ export interface IFlightEnquiryDetails {
 }
 
 export interface IFilter {
-  airlines: IAirlineDetails['code'];
+  source?: string;
+  destination?: string;
+  airlines?: IAirlineDetails['code'][];
+  departureTime?: Date | null;
 }

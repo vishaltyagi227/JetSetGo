@@ -1,0 +1,75 @@
+@import '@styles/functions.style';
+
+.flight-enquiry-section {
+  background: #073878;
+  background: linear-gradient(180deg, #073878 30%, #0c51ae 69%);
+  display: flex;
+  min-height: toRem(270);
+
+  @media (min-width: 1200px) {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+.flight-enquiry-results {
+  display: flex;
+  gap: toRem(36);
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__filter-button {
+    width: 100%;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    margin: toRem(10) 0;
+    padding-left: 5px;
+    color: #575959;
+  }
+
+  &__filter-drawer {
+    @media (min-width: 768px) {
+      flex-basis: 30%;
+    }
+  }
+
+  &__list {
+    background-image: url('@assets/watermark.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
+    background-blend-mode: soft-light;
+
+    @media (min-width: 768px) {
+      flex-basis: 70%;
+    }
+  }
+}
+
+.enquiry-form-wrapper {
+  width: 100%;
+}
+
+.flight-enquiry-results-section {
+  background-color: #f0f5fa;
+  padding-top: toRem(16);
+}
+
+.info-card-wrapper {
+  margin-bottom: toRem(16);
+}

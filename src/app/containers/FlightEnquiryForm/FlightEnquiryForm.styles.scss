@@ -1,0 +1,55 @@
+@import '@styles/functions.style';
+
+.enquiry-form {
+  margin: toRem(20) 0;
+
+  &__field-wrapper {
+    width: 100%;
+    margin: toRem(18) 0;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__field {
+    width: 100%;
+    flex-basis: 100%;
+    &--wrap {
+      @media (min-width: 768px) {
+        flex-basis: 50%;
+      }
+
+      @media (min-width: 1024) {
+        flex-basis: unset;
+      }
+    }
+  }
+
+  &__field-label {
+    color: #33a0fb;
+    padding: toRem(5) toRem(7.5);
+    font-size: toRem(14);
+    text-transform: uppercase;
+  }
+
+  &__submit-button {
+    width: 100%;
+
+    margin: toRem(16) auto;
+
+    @media (min-width: 1024px) {
+      max-width: toRem(800);
+    }
+
+    @media (min-width: 1024px) {
+      max-width: toRem(200);
+    }
+  }
+}
